@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-areas: "side-bar content content";
+}
+
+.image_sidebar {
+  grid-area: side-bar;
+  height: 100vh;
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.image_sidebar .logo {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  position: relative;
+  top: 30%;
+  opacity: 0.85;
+}
+
+.photo_credit {
+  font-size: 12px;
+  color: white;
+  padding: 0.5em;
+  text-align: center;
+  position: relative;
+  top: 82%;
+}
+.content {
+  grid-area: content;
+  background-color: #f7f7f8;
+}
+.intro {
+  margin-top: 7rem;
+  padding: 0.75em 2em;
+  color: rgb(17, 141, 66);
+  line-height: 2em;
+}
+.form {
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  opacity: 0.75;
+}
+.left,
+.right {
+  padding: 1em 2em;
+}
+input {
+  outline: none;
+}
+.button {
+  margin-left: 2em;
+}
+button {
+  padding: 0.75em 2.5em;
+  margin: 1em 0;
+  background-color: #56cf86;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+button:hover {
+  transform: scale(1.1);
+}
+#login {
+  color: rgb(17, 141, 66);
+  opacity: 0.5;
+  text-decoration: underline;
+}
+.copyright {
+  position: relative;
+  top: 20%;
+  text-align: center;
+  padding: 0.4em;
+  font-size: 12px;
+}
